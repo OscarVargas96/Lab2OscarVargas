@@ -87,14 +87,27 @@ cout<< "\n Menu \n 1.-Arreglo\n 2.-numeros triangulares\n 3.-impares y cubos\n 4
 	}
 	if(resp==3)
 	{
-		int cont=1;
+			
+		int cont=1,num;
 		cout << "\n Ingrese numero: ";
-		for(int i=1;i<=numero;i++)
+		cin >> num;
+		for(int i=1;i<=num;i++)
 		{
+			cout << i <<"°3= ";
 			for(int j=1;j<=i;j++)
 			{
-			
+				cout << cont << " + ";
+				cont+=2;
 			}
+			int cont2=cont;
+			int total=0;
+			for(int x=1;x<=i;x++)
+			{
+				cont2-=2;
+				total+=cont2;
+				
+			}
+			cout << "= " << total << endl;
 		}
 	}
 
